@@ -100,6 +100,52 @@ footer.site-footer {
 .article-single-layout article.article-grid{
     grid-gap: 0px;
 }
+.article-comment-form {
+    margin-top: 30px;
+}
+.article-comment-form fieldset {
+    padding: 47px;
+    border-color: #484ee3;
+    border-radius: 10px;
+}
+.article-comment-form legend {
+    font-size: 25px;
+    color: #484ee3;
+}
+.article-comment-form .form-fields{
+    display: flex;
+    margin: 33px 0px;
+    padding: 0px 29px;
+}
+.article-comment-form .form-fields label{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    flex-basis: 11em;
+}
+.article-comment-form .form-fields input, .article-comment-form .form-fields textarea{
+    padding: 10px 20px;
+    width: 500px;
+    border-radius: 10px;
+    border-color: #eee;
+    border-style: solid;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    flex-basis: 80%;
+}
+.article-comment-form .form-fields input:focus, .article-comment-form .form-fields textarea:focus {
+    outline-color: #484ee3;
+}
+.form-fields button {
+    padding: 12px 44px;
+    font-size: 20px;
+    background-color: #4048e8;
+    color: #fff;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 /* Article Page CSS ends */
 
 /* Media Queries CSS */
@@ -119,5 +165,17 @@ footer.site-footer {
     .article-details {
         flex-direction: column-reverse;
     }
-
+    .article-comment-form fieldset{
+        min-width: 66%;
+        padding: 0px;
+    }
+    .article-comment-form .form-fields {
+        flex-direction: column;
+    }
+    .article-comment-form .form-fields input, .article-comment-form .form-fields textarea{
+        width: auto;
+    }
+    .article-comment-form .form-fields label{
+        flex-basis: 0px;
+    }
 }
