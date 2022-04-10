@@ -80,6 +80,28 @@ footer.site-footer {
 }
 /* Footer CSS ends */
 
+/* Article Page CSS starts */
+.article-single-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+.article-image img {
+    width: 100%;
+}
+.article-details {
+    display: flex;
+    flex-flow: column;
+}
+.article-single-layout article.article-crypto{
+    border: 0px;
+    padding: 11px;
+}
+.article-single-layout article.article-grid{
+    grid-gap: 0px;
+}
+/* Article Page CSS ends */
+
 /* Media Queries CSS */
 @media only screen and (max-width: 600px) {
     .site-header-content{
@@ -88,4 +110,14 @@ footer.site-footer {
     ul.nav-items-list {
         grid-template-columns: auto;
     }
+    .article-single-content{
+        grid-template-columns: auto;
+    }
+    .site-footer-content{
+        padding: 0px;
+    }
+    .article-details {
+        flex-direction: column-reverse;
+    }
+
 }
